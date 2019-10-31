@@ -9,96 +9,97 @@
                 En ce mois monstrueux : réveillez le monstre qui sommeille en vous !
                 Remplissez le formulaire et ne soyez pas surpris de la réponse !
                 A vous de jouer !
-
             </p>
         </div>
     </section>    
-        <section class="container formulaire">
-            <form class='row caractere_form' action="" methode="">
+    <section class="container formulaire">
+        <form class='row caractere_form' action="/Home/index" method="POST">
+                <p>
+                    <label>Êtes-vous plutôt....</label>
+                </p>
+                <label for="sujet">Choisissez votre réponse : </label>
                 <img src="https://i.goopics.net/9m3Vw.jpg" class="col-12 form_img" alt="...">
                 <div class="btn-group btn-group-toggle mx-auto mb-3 mt-3 caractere_form_div" data-toggle="buttons">
-                    <label class="btn btn-secondary active" for='chair'>
-                        <input value="slasheur" type="radio" name="question1" id="chair" autocomplete="off" checked> Chair
-                    </label>
-                    <label class="btn btn-secondary" for='sang'>
-                        <input value="vampire" type="radio" name="question1" id="sang" autocomplete="off"> Sang
-                    </label>
-                    <label class="btn btn-secondary" for='ame'>
-                        <input value="ghost" type="radio" name="question1" id="ame" autocomplete="off"> Ame
-                    </label>
-                    <label class="btn btn-secondary" for='cervelle'>
-                        <input value="zombie" type="radio" name="question1" id="cervelle" autocomplete="off"> Cervelle
-                    </label>
-                </div>
-                <img src="https://i.goopics.net/lj4np.jpg" class="col-12 form_img" alt="...">
-                
-                <div class="btn-group btn-group-toggle mx-auto mb-3 mt-3 caractere_form_div" data-toggle="buttons">
-                    <label class="btn btn-secondary active" for='cri'>
-                    <input value="vampire" type="radio" name="question2" id="cri" autocomplete="off" checked> Cri
-                    </label>
-                    <label class="btn btn-secondary" for='rire'>
-                    <input value="slasheur" type="radio" name="question2" id="rire" autocomplete="off"> Rire
-                    </label>
-                    <label class="btn btn-secondary" for='gemissement'>
-                    <input value="zombie" type="radio" name="question2" id="gemissement" autocomplete="off"> Gemissement
-                    </label>
-                    <label class="btn btn-secondary" for='silence'>
-                    <input value="ghost" type="radio" name="question2" id="silence" autocomplete="off"> Silence
-                    </label>
-                </div>
-                <img src="https://i.goopics.net/n7oGl.jpg" class="col-12 form_img" alt="...">
-                
-                <div class="btn-group btn-group-toggle mx-auto mb-3 mt-3 caractere_form_div" data-toggle="buttons">
-                    <label class="btn btn-secondary active" for='mains'>
-                    <input value="zonbie" type="radio" name="question3" id="mains" autocomplete="off" checked> Mains
-                    </label>
-                    <label class="btn btn-secondary" for='armes'>
-                    <input value="slasheur" type="radio" name="question3" id="armes" autocomplete="off"> Armes
-                    </label>
-                    <label class="btn btn-secondary" for='dents'>
-                    <input value="vampire" type="radio" name="question3" id="dents" autocomplete="off"> Dents
-                    </label>
-                    <label class="btn btn-secondary" for='levitation'>
-                    <input value="ghost" type="radio" name="question3" id="levitation" autocomplete="off"> Levitation
-                    </label>
-                </div>
-                <img src="https://i.pinimg.com/originals/25/bc/eb/25bceb18a769f3e253c6615b10bf0307.jpg" class="col-12 form_img" alt="...">
-                
-                <div class="btn-group btn-group-toggle mx-auto mb-3 mt-3 caractere_form_div" data-toggle="buttons">
-                    <label class="btn btn-secondary active" for='planer'>
-                    <input value="ghost" type="radio" name="question4" id="planer" autocomplete="off" checked> Planer
-                    </label>
-                    <label class="btn btn-secondary" for='vehicle'>
-                    <input value="slasheur" type="radio" name="question4" id="vehicle" autocomplete="off"> Vehicule
-                    </label>
-                    <label class="btn btn-secondary" for='course'>
-                    <input value="zombie" type="radio" name="question4" id="course" autocomplete="off"> Course
-                    </label>
-                    <label class="btn btn-secondary" for='voler'>
-                    <input value="vampire" type="radio" name="question4" id="voler" autocomplete="off"> Voler
-                    </label>
-                </div>
-                <img src="https://i.goopics.net/mq2LO.png" class="col-12 form_img" alt="...">
-                
-                <div class="btn-group btn-group-toggle mx-auto mb-3 mt-3 caractere_form_div" data-toggle="buttons">
-                    <label class="btn btn-secondary active" for='rouge'>
-                    <input value="vampire" type="radio" name="question5" id="rouge" autocomplete="off" checked> Rouge
-                    </label>
-                    <label class="btn btn-secondary" for='noir'>
-                    <input value="slasheur" type="radio" name="question5" id="noir" autocomplete="off"> Noir
-                    </label>
-                    <label class="btn btn-secondary" for='blanc'>
-                    <input value="ghost" type="radio" name="question5" id="blanc" autocomplete="off">  blanc
-                    </label>
-                    <label class="btn btn-secondary" for='gris'>
-                    <input value="zombie" type="radio" name="question5" id="gris" autocomplete="off"> Gris
-                    </label>
-                </div>
-                 
-                 
-            </form>
-            <div class='row button_div'>
-            <button type="button" class="btn btn-dark mx-auto mb-3 heartbeat">Envoyer !</button>
+                <label class="btn btn-secondary active" for='chair'>
+                    <input value="slasheur" type="radio" name="question1" id="chair" autocomplete="off" checked> Chair
+                </label>
+                <label class="btn btn-secondary" for='sang'>
+                    <input value="vampire" type="radio" name="question1" id="sang" autocomplete="off"> Sang
+                </label>
+                <label class="btn btn-secondary" for='ame'>
+                    <input value="ghost" type="radio" name="question1" id="ame" autocomplete="off"> Ame
+                </label>
+                <label class="btn btn-secondary" for='cervelle'>
+                    <input value="zombie" type="radio" name="question1" id="cervelle" autocomplete="off"> Cervelle
+                </label>
             </div>
-        </section>
+            <img src="https://i.goopics.net/lj4np.jpg" class="col-12 form_img" alt="...">
+
+            <div class="btn-group btn-group-toggle mx-auto mb-3 mt-3 caractere_form_div" data-toggle="buttons">
+                <label class="btn btn-secondary active" for='cri'>
+                <input value="vampire" type="radio" name="question2" id="cri" autocomplete="off" checked> Cri
+                </label>
+                <label class="btn btn-secondary" for='rire'>
+                <input value="slasheur" type="radio" name="question2" id="rire" autocomplete="off"> Rire
+                </label>
+                <label class="btn btn-secondary" for='gemissement'>
+                <input value="zombie" type="radio" name="question2" id="gemissement" autocomplete="off"> Gemissement
+                </label>
+                <label class="btn btn-secondary" for='silence'>
+                <input value="ghost" type="radio" name="question2" id="silence" autocomplete="off"> Silence
+                </label>
+            </div>
+            <img src="https://i.goopics.net/n7oGl.jpg" class="col-12 form_img" alt="...">
+
+            <div class="btn-group btn-group-toggle mx-auto mb-3 mt-3 caractere_form_div" data-toggle="buttons">
+                <label class="btn btn-secondary active" for='mains'>
+                <input value="zonbie" type="radio" name="question3" id="mains" autocomplete="off" checked> Mains
+                </label>
+                <label class="btn btn-secondary" for='armes'>
+                <input value="slasheur" type="radio" name="question3" id="armes" autocomplete="off"> Armes
+                </label>
+                <label class="btn btn-secondary" for='dents'>
+                <input value="vampire" type="radio" name="question3" id="dents" autocomplete="off"> Dents
+                </label>
+                <label class="btn btn-secondary" for='levitation'>
+                <input value="ghost" type="radio" name="question3" id="levitation" autocomplete="off"> Levitation
+                </label>
+            </div>
+            <img src="https://i.pinimg.com/originals/25/bc/eb/25bceb18a769f3e253c6615b10bf0307.jpg" class="col-12 form_img" alt="...">
+
+            <div class="btn-group btn-group-toggle mx-auto mb-3 mt-3 caractere_form_div" data-toggle="buttons">
+                <label class="btn btn-secondary active" for='planer'>
+                <input value="ghost" type="radio" name="question4" id="planer" autocomplete="off" checked> Planer
+                </label>
+                <label class="btn btn-secondary" for='vehicle'>
+                <input value="slasheur" type="radio" name="question4" id="vehicle" autocomplete="off"> Vehicule
+                </label>
+                <label class="btn btn-secondary" for='course'>
+                <input value="zombie" type="radio" name="question4" id="course" autocomplete="off"> Course
+                </label>
+                <label class="btn btn-secondary" for='voler'>
+                <input value="vampire" type="radio" name="question4" id="voler" autocomplete="off"> Voler
+                </label>
+            </div>
+            <img src="https://i.goopics.net/mq2LO.png" class="col-12 form_img" alt="...">
+
+            <div class="btn-group btn-group-toggle mx-auto mb-3 mt-3 caractere_form_div" data-toggle="buttons">
+                <label class="btn btn-secondary active" for='rouge'>
+                <input value="vampire" type="radio" name="question5" id="rouge" autocomplete="off" checked> Rouge
+                </label>
+                <label class="btn btn-secondary" for='noir'>
+                <input value="slasheur" type="radio" name="question5" id="noir" autocomplete="off"> Noir
+                </label>
+                <label class="btn btn-secondary" for='blanc'>
+                <input value="ghost" type="radio" name="question5" id="blanc" autocomplete="off">  blanc
+                </label>
+                <label class="btn btn-secondary" for='gris'>
+                <input value="zombie" type="radio" name="question5" id="gris" autocomplete="off"> Gris
+                </label>
+            </div>
+        </form>
+        <div class='row button_div'>
+        <button type="button" class="btn btn-dark mx-auto mb-3 heartbeat" name="isFormSubmitted">Envoyer !</button>
+        </div>
+    </section>
 {% endblock %}
