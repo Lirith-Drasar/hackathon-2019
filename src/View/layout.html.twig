@@ -12,22 +12,22 @@
 <body>
     <!-- debut du header et de la navigation  -->
     <header class="header">
-        <nav class="header_nav navbar-dark navbar-expand-xl bg-dark"> 
+        <nav class="header_nav navbar-dark navbar-expand-xl"> 
                 <!-- Placez ensuite le bouton navbar-toggler et son icône barre navbar-toggler-icon pour le mode mobile. -->
                 <button class="header_nav_button navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="header_nav_span navbar-toggler-icon"></span>
                 </button>
                 <!-- Intégrez ensuite les liens de navigations dans un bloc navbar-collapse .-->
-                <div class="header_nav_div collapse navbar-collapse bg-dark" id="navbarSupportedContent">
+                <div class="header_nav_div collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="header_nav_list navbar-nav ml-2">
                         <li class="header_nav_list_item nav-item">
-                            <a class="header_nav_list_link nav-link text-white m-1" href="#accueil">ACCUEIL</a>
+                            <a class="header_nav_list_link nav-link text-light m-1" href="#accueil">ACCUEIL</a>
                         </li>
                         <li class="header_nav_list_item nav-item">
-                            <a class="header_nav_list_link nav-link text-white m-1" href="#apropos">A PROPROS</a>
+                            <a class="header_nav_list_link nav-link text-light m-1" href="#apropos">A PROPROS</a>
                         </li>
                         <li class="header_nav_list_item nav-item">
-                            <a class="header_nav_list_link nav-link text-white m-1" href="#contact">CONTACT</a>
+                            <a class="header_nav_list_link nav-link text-light m-1" href="#contact">CONTACT</a>
                         </li>
                     </ul>
                 </div>
@@ -35,6 +35,7 @@
     </header>
     <!-- fin du header -->
     {% block content %}{% endblock %}
+    {% block result %}{% endblock %}
     <!-- debut du footer  -->
     <footer class='container-fluid footer bg-dark text-white'>
         {% block footer %}{% endblock %}
