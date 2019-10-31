@@ -14,8 +14,12 @@ final class Versions
 {
     public const ROOT_PACKAGE_NAME = 'aurel/simple-mvc';
     public const VERSIONS          = array (
+  'psr/log' => '1.1.0@6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd',
+  'symfony/http-client' => 'v4.3.5@69d438274718121e1166e7f65c290f891a4c8ddb',
+  'symfony/http-client-contracts' => 'v1.1.7@353b2a3e907e5c34cf8f74827a4b21eb745aab1d',
   'symfony/polyfill-ctype' => 'v1.12.0@550ebaac289296ce228a706d0867afc34687e3f4',
   'symfony/polyfill-mbstring' => 'v1.12.0@b42a2f66e8f1b15ccf25652c3424265923eb4f17',
+  'symfony/polyfill-php73' => 'v1.12.0@2ceb49eaccb9352bff54d22570276bb75ba4a188',
   'twig/twig' => 'v2.11.3@699ed2342557c88789a15402de5eb834dedd6792',
   'composer/ca-bundle' => '1.2.3@f26a67e397be0e5c00d7c52ec7b5010098e15ce5',
   'composer/composer' => '1.9.0@314aa57fdcfc942065996f59fb73a8b3f74f3fa5',
@@ -44,7 +48,6 @@ final class Versions
   'phpstan/phpdoc-parser' => '0.3.5@8c4ef2aefd9788238897b678a985e1d5c8df6db4',
   'phpstan/phpstan' => '0.11.12@56b3eb2a371b60537fd20794e24af9e7e8ed4e30',
   'psr/container' => '1.0.0@b7ce3b176482dbbc1245ebf52b181af44c2cf55f',
-  'psr/log' => '1.1.0@6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd',
   'seld/jsonlint' => '1.7.1@d15f59a67ff805a44c50ea0516d2341740f81a38',
   'seld/phar-utils' => '1.0.1@7009b5139491975ef6486545a39f3e6dad5ac30a',
   'squizlabs/php_codesniffer' => '3.4.2@b8a7362af1cc1aadb5bd36c3defc4dda2cf5f0a8',
@@ -56,11 +59,10 @@ final class Versions
   'symfony/filesystem' => 'v4.3.3@b9896d034463ad6fd2bf17e2bf9418caecd6313d',
   'symfony/finder' => 'v4.3.3@9638d41e3729459860bb96f6247ccb61faaa45f2',
   'symfony/options-resolver' => 'v4.3.3@40762ead607c8f792ee4516881369ffa553fee6f',
-  'symfony/polyfill-php73' => 'v1.12.0@2ceb49eaccb9352bff54d22570276bb75ba4a188',
   'symfony/process' => 'v4.3.3@856d35814cf287480465bb7a6c413bb7f5f5e69c',
   'symfony/service-contracts' => 'v1.1.5@f391a00de78ec7ec8cf5cdcdae59ec7b883edb8d',
   'symfony/yaml' => 'v4.3.3@34d29c2acd1ad65688f58452fd48a46bd996d5a6',
-  'aurel/simple-mvc' => 'dev-master@1f48749d892077cc3df216c095c26b02694aa2ad',
+  'aurel/simple-mvc' => 'dev-master@e46513e732cffe17a9853809f1ea485c53b2f084',
 );
 
     private function __construct()
