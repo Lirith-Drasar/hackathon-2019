@@ -4,11 +4,64 @@
 
 {% block result %}
 
-{{ result[max(array monster)] }}
+{% if monster is same as('vampire') %}
+    <div class="container">
+        <div class="col mx-auto">
+            <div class="card" style="...">
+                <div class="card-body">
+                    <h5 class="card-title">Bravo ! Tu es un {{ monster }}</h5>
+                    <p class="card-text">Que tu brilles ou fonde au soleil, une soif immense de sang t’anime au quotidien. Certains pensent que tu crains l’argent comme les loups-garous, d'autres te croient sensible à l’ail ou encore aux croix. Que tu bois du sang animal ou humain, la couleur de cette essence vitale ne suffisait pas à préserver ton magnifique teint.</p>
+                    <img src="https://nsa40.casimages.com/img/2019/10/07/19100704563310293.jpg" class="card-img-top" alt="vampire">
+                    <a href="https://fr.wikipedia.org/wiki/Nosferatu_le_vampire" class="btn btn-primary col-6 offset-3 mt-3">Découvrez-en plus ?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endif %}
 
-{% for monster in monsters %}
-    {% set maxKey = max(monster.key) %}
-    key--->>{{ maxKey }}
-{% endfor %}
+{% if monster is same as('zombie') %}
+    <div class="container">
+        <div class="col mx-auto">
+            <div class="card" style="...">
+                <div class="card-body">
+                    <h5 class="card-title">Bravo ! Tu es un {{ monster }}</h5>
+                    <p class="card-text">Tu es une personne ayant perdu toute forme de conscience et d'humanité, au comportement violent envers les êtres humains et dont le mal est terriblement contagieux. Sans volonté propre, tu suis d’instinct ta horde à la recherche de cerveaux frais et facilement disponibles. Seul ta faim et ta petite personne compte.</p>
+                    <img src="https://nsa40.casimages.com/img/2019/10/07/191007040542860434.jpg" class="card-img-top" alt="zombie">
+                    <a href="https://fr.wikipedia.org/wiki/Rec_(film)" class="btn btn-primary col-6 offset-3 mt-3">Découvrez-en plus ?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endif %}
+
+{% if monster is same as('slasheur') %}
+    <div class="container">
+        <div class="col mx-auto">
+            <div class="card" style="...">
+                <div class="card-body">
+                    <h5 class="card-title">Bravo ! Tu es un {{ monster }}</h5>
+                    <p class="card-text">Personne ne tue comme toi. Tu es doté du charisme et de l’intelligence d’Hannibal Lecter, de la rage de Charlie Lee Ray alias Chucky, de la persévérance de Freddy ou de Jason. Bref, tu aimes les griffes, les couteaux, les épées et les armes à feu. Bref tout ce qui sert à tuer, à assassiner, à déchiqueter et décortiquer.</p>
+                    <img src="https://nsa40.casimages.com/img/2019/10/07/191007035914844273.jpg" class="card-img-top" alt="slasheur">
+                    <a href="https://fr.wikipedia.org/wiki/Scream_3" class="btn btn-primary col-6 offset-3 mt-3">Découvrez-en plus ?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endif %}
+
+{% if monster is same as('ghost') %}
+    <div class="container">
+        <div class="col mx-auto">
+            <div class="card" style="...">
+                <div class="card-body">
+                    <h5 class="card-title">Bravo ! Tu es un {{ monster }}</h5>
+                    <p class="card-text">On te croit gentil, frêle et serviable. Tu es bien trop comparé à Casper, cette espèce de traite gentil fantôme dont tu aimerais torde le coup si seulement vous aviez des corps. Mais toi, tu préfères hanter, apeuré et même t’emparer d'âme innocente et vulnérable. Tes aspects sont aussi divers que variés, fantôme de Scream, nonne de La nonne ou même invisible, tu es toujours là, quelque part, à attendre ton heure.</p>
+                    <img src="https://nsa40.casimages.com/img/2019/10/15/191015030143371006.jpg" class="card-img-top" alt="ghost">
+                    <a href="https://fr.wikipedia.org/wiki/Insidious_:_Chapitre_2" class="btn btn-primary col-6 offset-3 mt-3">Découvrez-en plus ?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endif %}
 
 {% endblock %}
