@@ -1,0 +1,14 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}Vos Résultats{% endblock %}
+
+{% block result %}
+
+{{ result[max(array monster)] }}
+
+{% for monster in monsters %}
+    {% set maxKey = max(monster.key) %}
+    key--->>{{ maxKey }}
+{% endfor %}
+
+{% endblock %}
