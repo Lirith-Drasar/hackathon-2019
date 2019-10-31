@@ -8,6 +8,8 @@
 
 namespace App\Controller;
 
+use Symfony\Component\HttpClient\HttpClient;
+
 class HomeController extends AbstractController
 {
 
@@ -121,6 +123,10 @@ class HomeController extends AbstractController
         else {
             $error = 'Une ou des réponses sont mal selectionnées';
         }
+
+        $client = HttpClient::create();
+        $response = $client->request('GET', 'https://hackathon-wild-hackoween.herokuapp.com/movies');
+        $content = $response->toArray();
 
         return $this->twig->render('Home/index.html.twig');
     }

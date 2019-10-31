@@ -1,0 +1,119 @@
+.header_nav_div {
+    text-align: center;
+}
+.header_nav_list_link {
+    border: double black;
+}
+@font-face{
+    
+    font-family: "title";
+    src:url('/assets/fonts/HalloweenFont.ttf');
+}
+@font-face{
+    
+    font-family: "text";
+    src:url('/assets/fonts/BladeFont.ttf');
+}
+body {
+    background: url(https://i.goopics.net/0QKXq.jpg);
+    color: #00a02c;
+    text-shadow: 1px 1px 2px #a90000;
+}
+
+h1{
+    font-family: "title" ;
+    text-align: center;
+    font-size: 1.5em;
+}
+label.btn.btn-secondary{
+    font-family: "title";
+    font-size: 0.8em;
+}
+p,h2 {
+    font-family: "text";
+    font-size: 0.8em;
+    text-align: center;
+}
+.btn {
+    color: #00a02c;
+}
+button.btn.btn-dark.mx-auto.mb-3 {
+    font-family: "text";
+}
+
+
+label.btn.btn-secondary.active {
+    color: red!important;
+    background-color:black!important;
+}
+label.btn.btn-secondary {
+    background-color: darkred;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+    color: #fff;
+    background-color: #545b62;
+    border-color: red;
+}
+.btn-secondary {
+    border-color: black;
+}
+
+.text-focus-in, body {
+	animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+
+ @keyframes text-focus-in {
+    0% {
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+
+  @keyframes body {
+    0% {
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+
+.form_img {
+    border-radius: 45px;
+}
+.heartbeat {
+	animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+ @keyframes heartbeat {
+    from {
+      transform: scale(1);
+      transform-origin: center center;
+      animation-timing-function: ease-out;
+    }
+    10% {
+      transform: scale(0.91);
+      animation-timing-function: ease-in;
+    }
+    17% {
+      transform: scale(0.98);
+      animation-timing-function: ease-out;
+    }
+    33% {
+      transform: scale(0.87);
+      animation-timing-function: ease-in;
+    }
+    45% {
+      transform: scale(1);
+      animation-timing-function: ease-out;
+    }
+  }
+  
